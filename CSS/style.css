@@ -12,7 +12,8 @@ body {
 
 #container {
     background-color: rgba(255, 228, 196, 0.8);
-    width: 1190px;
+    width: 100%;
+    max-width: 1190px;
     border-radius: 15px;
     padding: 20px;
     margin: 20px;
@@ -95,21 +96,28 @@ a.menu:active {
 .secundario {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .cardapio, .local {
-    width: 565px;
+    width: 48%;
+    margin-bottom: 20px;
 }
 
 footer {
     background-color: rgba(184, 51, 41, 0.62);
-    height: 100px;
+    height: auto;
     margin-top: 50px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer img {
-    float: left;
+    max-width: 80px;
+    margin-right: 10px;
 }
 
 footer a {
@@ -117,11 +125,94 @@ footer a {
     font-family: 'Dancing Script', cursive;
     font-size: 1.8rem;
     text-decoration: none;
-    margin-left: 10px;
 }
 
 .assinatura {
     text-align: right;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #B83229;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        font-size: 1.6rem;
+    }
+
+    .principal article h1 {
+        font-size: 1.8rem;
+    }
+
+    .principal article p {
+        font-size: 1rem;
+    }
+
+    .cardapio, .local {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    footer img {
+        max-width: 60px;
+    }
+
+    footer a {
+        font-size: 1.5rem;
+    }
+
+    .assinatura {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .destaque img {
+        max-width: 100%;
+    }
+
+    .cardapio img, .local img {
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        font-size: 1.4rem;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cardapio h2, .local h2 {
+        font-size: 1.6rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .assinatura {
+        margin-top: 10px;
+    }
+
+    .destaque img {
+        max-width: 100%;
+    }
+
+    .cardapio img, .local img {
+        max-width: 80%;
+    }
 }
