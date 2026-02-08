@@ -1,218 +1,227 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-image: url("../imagens/bg_site.jpg");
-    display: flex;
-    justify-content: center;
+  background-image: url("../imagens/bg_site.jpg");
+  display: flex;
+  justify-content: center;
 }
 
 #container {
-    background-color: rgba(255, 228, 196, 0.8);
-    width: 100%;
-    max-width: 1190px;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px;
+  background-color: rgba(255, 228, 196, 0.8);
+  width: 100%;
+  max-width: 1190px;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
 }
 
 header img {
-    width: 250px;
+  width: 250px;
 }
 
 nav ul li {
-    list-style-type: none;
-    margin: 20px;
+  list-style-type: none;
+  margin: 20px;
 }
 
 .menu {
-    text-decoration: none;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2rem;
+  text-decoration: none;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
-    display: flex;
+  display: flex;
 }
 
 a.menu:link {
-    color: #B83229;
+  color: #b83229;
 }
 
 a.menu:visited {
-    color: #B83229;
+  color: #b83229;
 }
 
 a.menu:hover {
-    color: #005920;
+  color: #005920;
 }
 
 a.menu:active {
-    color: #B83229;
+  color: #b83229;
 }
 
 .principal article h1 {
-    color: #B83229;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.3rem;
-    margin-top: 30px;
-    text-align: center;
+  color: #b83229;
+  font-family: "Dancing Script", cursive;
+  font-size: 2.3rem;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .principal article p {
-    color: #005920;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify;
-    line-height: 2rem;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    margin-bottom: 50px;
+  color: #005920;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-.cardapio p, .local p {
-    color: #005920;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify;
+.cardapio p,
+.local p {
+  color: #005920;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
 }
 
-.cardapio h2, .local h2 {
-    color: #B83229;
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.8rem;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    text-align: center;
+.cardapio h2,
+.local h2 {
+  color: #b83229;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .secundario {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.cardapio, .local {
-    width: 48%;
-    margin-bottom: 20px;
+.cardapio,
+.local {
+  width: 48%;
+  margin-bottom: 20px;
 }
 
 footer {
-    background-color: rgba(184, 51, 41, 0.62);
-    height: auto;
-    margin-top: 50px;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  background-color: rgba(184, 51, 41, 0.62);
+  height: auto;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
 }
 
 footer img {
-    max-width: 80px;
-    margin-right: 10px;
+  max-width: 80px;
+  margin-right: 10px;
 }
 
 footer a {
-    color: #fff;
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.8rem;
-    text-decoration: none;
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  font-size: 1.8rem;
+  text-decoration: none;
 }
 
 .assinatura {
-    text-align: right;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #B83229;
+  text-align: right;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #b83229;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
-    .menu {
-        font-size: 1.6rem;
-    }
+  .menu {
+    font-size: 1.6rem;
+  }
 
-    .principal article h1 {
-        font-size: 1.8rem;
-    }
+  .principal article h1 {
+    font-size: 1.8rem;
+  }
 
-    .principal article p {
-        font-size: 1rem;
-    }
+  .principal article p {
+    font-size: 1rem;
+  }
 
-    .cardapio, .local {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .cardapio,
+  .local {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 
-    footer img {
-        max-width: 60px;
-    }
+  footer img {
+    max-width: 60px;
+  }
 
-    footer a {
-        font-size: 1.5rem;
-    }
+  footer a {
+    font-size: 1.5rem;
+  }
 
-    .assinatura {
-        text-align: center;
-        margin-top: 20px;
-    }
+  .assinatura {
+    text-align: center;
+    margin-top: 20px;
+  }
 
-    .destaque img {
-        max-width: 100%;
-    }
+  .destaque img {
+    max-width: 100%;
+  }
 
-    .cardapio img, .local img {
-        max-width: 90%;
-        margin: 0 auto;
-        display: block;
-    }
+  .cardapio img,
+  .local img {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
-    .menu {
-        font-size: 1.4rem;
-    }
+  .menu {
+    font-size: 1.4rem;
+  }
 
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .cardapio h2, .local h2 {
-        font-size: 1.6rem;
-    }
+  .cardapio h2,
+  .local h2 {
+    font-size: 1.6rem;
+  }
 
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .assinatura {
-        margin-top: 10px;
-    }
+  .assinatura {
+    margin-top: 10px;
+  }
 
-    .destaque img {
-        max-width: 100%;
-    }
+  .destaque img {
+    max-width: 100%;
+  }
 
-    .cardapio img, .local img {
-        max-width: 80%;
-    }
+  .cardapio img,
+  .local img {
+    max-width: 80%;
+  }
 }
